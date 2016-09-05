@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent" android:layout_width="fill_parent">
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="fill_parent" android:orientation="vertical"
+        android:layout_gravity="top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text=""
+            android:background="@drawable/icon4"
+            android:id="@+id/tips" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:id="@+id/file_name"
+            android:text="http://play.baidu.com/?__m=mboxCtrl.playSong__a=7319519__o=song/7319519||playBtnfr=-1||www.2345.com#" />
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4.0dip"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <Button
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnPlayUrl"
+                android:background="@drawable/icon"
+                android:text="播放"></Button>
+            <Button
+                android:layout_height="wrap_content"
+                android:id="@+id/btnPause"
+                android:text="暂停"
+                android:background="@drawable/icon2"
+                android:layout_width="80dip"></Button>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="80dip"
+                android:text="停止"
+                android:background="@drawable/icon3"
+                android:id="@+id/btnStop"></Button>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="80dip"
+                android:text="重播"
+                android:background="@drawable/icon1"
+                android:id="@+id/btnReplay"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip">
+            <SeekBar
+                android:paddingRight="10dip"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/skbProgress"
+                android:max="100"></SeekBar>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
